@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/Style_reg_establecimiento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./estilos/Style_reg_establecimiento.css">
+
+    <title>MyBog</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <img src="/Imagenes/Logo.png" alt="Logo"><br>
+            <li><a class="amarillo" href="#">Inicio</a></li>
+            <li><a class="rojo" href="#">Mapa</a></li>
+            <li><a class="amarillo" href="#">Calendario</a></li>
+            <li>
+                <a class="ar" href="#">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Nombre de usuario</span>
+                </a>
+            </li><br><br>
+        </ul>
+    </nav>
+<br><br>
+    <div class="registro-establecimiento">
+        <div class="tit2">
+        <center><h2>Registro de Establecimiento</h2></center>
+        </div>
+        <form>
+            <label for="nombre">Nombre del establecimiento:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="tipo">Tipo de establecimiento:</label>
+            <input type="text" id="tipo" name="tipo" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="propietario">Nombre del propietario:</label>
+            <input type="text" id="propietario" name="propietario" required>
+
+            <label for="horario">Horario:</label>
+            <input type="text" id="horario" name="horario" required>
+
+            <label for="contacto">Contacto:</label>
+            <input type="text" id="contacto" name="contacto" required>
+
+            <label for="informacion">Información adicional:</label>
+            <textarea id="informacion" name="informacion"></textarea>
+            
+            <label for="fotos">Fotos:</label>
+            <input type="file" id="fotos" name="fotos" accept="image/*" multiple>
+            <div id="selected-images"></div>
+
+            
+            <input type="submit" value="Enviar registro">
+        </form>
+    </div>
+    <br><br>
+    <footer class="footer">
+        <nav>
+           <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <p>© 2023 MyBog. Todos los derechos reservados.</p>
+        </nav>
+     </footer>
+</body>
+
+    <script>
+        const inputFotos = document.getElementById('fotos');
+        const selectedImages = document.getElementById('selected-images');
+    
+        inputFotos.addEventListener('change', function() {
+            selectedImages.innerHTML = '';
+    
+            for (let i = 0; i < inputFotos.files.length; i++) {
+                const file = inputFotos.files[i];
+                const image = document.createElement('img');
+                image.src = URL.createObjectURL(file);
+                selectedImages.appendChild(image);
+            }
+        });
+    </script>
+
+    <script src="./Funcionamiento_por_js/Funcionamiento.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</html>

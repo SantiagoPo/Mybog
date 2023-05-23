@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:rgb(255, 255, 255);
+}
+
+
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffcf11;
+}
+.menu img {
+    left: 8%;
+    top: 2%;
+    width: 200px;
+    position: absolute;
+}
+.menu ul {
+    color: #000000;
+    font-size: 14px;
+    text-align: end;
+}
+ 
+.menu ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.menu ul li .rojo:hover {
+    color: #fff;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+
+.menu ul li .amarillo:hover {
+    color: #ffffff;
+    background-color: #ffcf11;
+    transition: 0.30s;
+ }
+
+.menu ul li .amarillo {
+    border: 2px solid #ffcf11 ;
+    border-radius: 20px;
+    transition: 0.30s;
+}
+
+.menu ul li .rojo {
+    border: 2px solid #f2163e ;
+    border-radius: 20px;
+    transition: 0.30s;
+}
+ 
+.menu ul li .ar {
+    border: 2px solid #f2163e ;
+    background-color: #f2163e;
+    border-radius: 20px;
+    transition: 0.30s;
+    color: #fff;
+}
+
+.menu ul li .ar:hover {
+    color: #ffcf11;
+    font-size: 18px;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+.menu ul li .ar span {
+    color: #ffcf11; 
+    background-color: #f2163e;
+ }
+
+.footer nav{
+    background-color: #fff;
+    color: #f2163e;
+    font-size: 14px;
+    text-align: center;
+    padding: 13px;
+    border-top: 2px solid #f2163e;
+}
+ 
+.footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ 
+.footer nav ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.footer nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.footer nav ul li a:hover {
+    text-decoration: underline 2px #f2163e;
+ }
+ 
+
+ #map {
+    width: 90vh;
+    height: 70vh;
+    margin-top: 55px;
+    margin-left: 100px;
+    border-radius: 9px;
+    box-shadow: #000000 5px 5px 12px;
+}
+
+

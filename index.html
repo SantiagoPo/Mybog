@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./estilos/style_index.css">
+    <link rel="stylesheet" href="./estilos/calendario.css">
+
+
+    <title>MyBog</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <img src="/Imagenes/Logo.png" alt="Logo"><br>
+            <li><a class="amarillo" href="#">Inicio</a></li>
+            <li><a class="rojo" href="#">Mapa</a></li>
+            <li><a class="amarillo" href="#">Calendario</a></li>
+            <li>
+                <a class="ar" href="#">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Nombre de usuario</span>
+                </a>
+            </li><br><br>
+        </ul>
+    </nav>
+
+
+
+   <br><br>
+
+    <div class="calendar"><br>
+        <div class="calendar__info">
+            <div class="calendar__prev" id="prev-month">&#9664;</div>
+            <div class="calendar__month" id="month"></div>
+            <div class="calendar__year" id="year"></div>
+            <div class="calendar__next" id="next-month">&#9654;</div>
+        </div>
+    <br>
+        <div class="calendar__week">
+        
+            <div class="calendar__day calendar__item">Lunes</div>
+            <div class="calendar__day calendar__item">Martes</div>
+            <div class="calendar__day calendar__item">MIercoles</div>
+            <div class="calendar__day calendar__item">Jueves</div>
+            <div class="calendar__day calendar__item">Viernes</div>
+            <div class="calendar__day calendar__item">Sabado</div>
+            <div class="calendar__day calendar__item">Domingo</div>
+        </div>
+
+
+        <div class="calendar__dates" id="dates"></div>
+    </div>
+    
+
+    <div class="actividades_del_dia">
+        <img class="comercial" src="./Imagenes/comercial.jpg" alt="">
+        <span>Actividades del dia</span><hr>
+        <label class="actividadcen">Centro comercial</label>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto labore eius possimus quam sed, quas eveniet et, provident vitae ullam ea?.</p>        
+        <input type="button" class="mas_informacion" value="Mas informacion">
+    </div>
+
+
+
+
+<br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <nav>
+           <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <p>© 2023 MyBog. Todos los derechos reservados.</p>
+        </nav>
+    </footer>
+</body>
+
+
+
+
+
+    <script src="./Funcionamiento_por_js/scripts_calendar.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./Funcionamiento_por_js/Funcionamiento.js"></script>
+
+
+
+<script>
+    const selectDay = (dayElement) => {
+        if (selectedDay) {
+          selectedDay.classList.remove('calendar__date--selected');
+        }
+      
+        selectedDay = dayElement;
+        selectedDay.classList.add('calendar__date--selected');
+      
+        // Obtener el número de día seleccionado
+        const selectedDate = parseInt(dayElement.textContent);
+      
+        // Obtener el div de información del día
+        const dayInfoDiv = document.getElementById('day-info');
+      
+        // Crear y establecer el contenido del div de información del día
+        const dayInfoContent = `Información del día ${selectedDate}`;
+        dayInfoDiv.innerHTML = dayInfoContent;
+      };
+      
+</script>      
+
+
+</html>
