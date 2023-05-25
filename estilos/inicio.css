@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:rgb(255, 255, 255);
+}
+
+.ciudad {
+    margin-top: 10px;
+    width: 600px;
+    position: absolute;
+    left: 12%
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffcf11;
+}
+.menu img {
+    left: 8%;
+    top: 2%;
+    width: 200px;
+    position: absolute;
+}
+.menu ul {
+    color: #000000;
+    font-size: 14px;
+    text-align: end;
+}
+ 
+
+
+
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.menu ul li .rojo:hover {
+    color: #fff;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+
+.menu ul li .amarillo:hover {
+    color: #ffffff;
+    background-color: #ffcf11;
+    transition: 0.30s;
+ }
+
+.menu ul li .amarillo {
+    border: 2px solid #ffcf11 ;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+
+.menu ul li .rojo {
+    border: 2px solid #f2163e ;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+ 
+.menu ul li .ar {
+    border: 2px solid #f2163e ;
+    background-color: #f2163e;
+    border-radius: 20px;
+    transition: 0.30s;
+    color: #fff;
+    text-align: center;
+    width:100px;
+}
+
+.menu ul li .ar:hover {
+    color: #ffcf11;
+    font-size: 18px;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+.menu ul li .ar span {
+    color: #ffcf11; 
+    background-color: #f2163e;
+ }
+
+
+
+
+.footer nav{
+    margin-top: 115px;
+    background-color: #fff;
+    color: #f2163e;
+    font-size: 14px;
+    text-align: center;
+    padding: 13px;
+    border-top: 2px solid #f2163e;
+}
+ 
+.footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 150px;
+ }
+ 
+.footer nav ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.footer nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.footer nav ul li a:hover {
+    text-decoration: underline 2px #f2163e;
+ }
+ 
+.palabra_clave p{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size:60px;
+    
+    text-align: left;
+}
+.img1{
+    width: 700px;
+    margin-top: -550px;
+    margin-left: 1000px;
+}
+.palabra_clave2 input{
+    height: 55px;
+    width: 1680px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+    font-size: 40px;
+    padding-left: 70px;
+    
+}
+.palabra_clave2 img{
+    position: absolute;
+    left: 110px;
+    top: 659px;
+    width: 50px;
+}
+
+.strong1{
+    color:#f2163e;
+}
+.strong2{
+    color: #ffcf11;
+}

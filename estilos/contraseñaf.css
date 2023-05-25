@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:rgb(255, 255, 255);
+}
+
+.ciudad {
+    margin-top: 10px;
+    width: 600px;
+    position: absolute;
+    left: 12%
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffcf11;
+}
+.menu img {
+    left: 8%;
+    top: 2%;
+    width: 200px;
+    position: absolute;
+}
+.menu ul {
+    color: #000000;
+    font-size: 14px;
+    text-align: end;
+}
+ 
+
+
+
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.menu ul li .rojo:hover {
+    color: #fff;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+
+.menu ul li .amarillo:hover {
+    color: #ffffff;
+    background-color: #ffcf11;
+    transition: 0.30s;
+ }
+
+.menu ul li .amarillo {
+    border: 2px solid #ffcf11 ;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+
+.menu ul li .rojo {
+    border: 2px solid #f2163e ;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+ 
+.menu ul li .ar {
+    border: 2px solid #f2163e ;
+    background-color: #f2163e;
+    border-radius: 20px;
+    transition: 0.30s;
+    color: #fff;
+    text-align: center;
+    width:100px;
+}
+
+.menu ul li .ar:hover {
+    color: #ffcf11;
+    font-size: 18px;
+    background-color: #f2163e;
+    transition: 0.30s;
+ }
+
+.menu ul li .ar span {
+    color: #ffcf11; 
+    background-color: #f2163e;
+ }
+
+
+
+
+.footer nav{
+    margin-top: 150px;
+    background-color: #fff;
+    color: #f2163e;
+    font-size: 14px;
+    text-align: center;
+    padding: 13px;
+    border-top: 2px solid #f2163e;
+}
+ 
+.footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 150px;
+ }
+ 
+.footer nav ul li {
+    display: inline-block;
+    margin-right: 10%;
+ }
+ 
+.footer nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+ }
+ 
+.footer nav ul li a:hover {
+    text-decoration: underline 2px #f2163e;
+ }
+ 
+
+ .olvi{
+    position: relative;
+    left: 65vh;
+    width: 700px;
+    height: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px #000000;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    
+ }
+ .olvi h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #f2163e;
+    text-align: center;
+}
+.olvi p{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.input1{
+    margin-left: 100px;
+}
+.olvi a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f40303;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 60px;
+    letter-spacing: 3px;
+    margin-left: 240px;
+}
+.email1{
+    margin-top: 70px;
+    margin-left: 85px;
+    width: 450px;
+    height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #f2163e;
+    padding-left: 30px;
+}
+.olvi a:hover {
+    background: #ff0000;
+    color: #ffcf11;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff0000,
+                0 0 25px #ff0000,
+                0 0 50px #ff0202,
+                0 0 100px #ff0000;
+}
+
+.olvi img{
+    position: absolute;
+    top: 312px;
+    left: 125px;
+    
+}

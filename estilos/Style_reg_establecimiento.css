@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid #ffcf11;
+
+}
+
+.menu img {
+    width: 200px;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+}
+
+.menu ul {
+    color: #000000;
+    font-size: 15px;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu ul li .rojo:hover {
+    color: #fff;
+    background-color: #f2163e;
+    transition: 0.30s;
+}
+
+.menu ul li .amarillo:hover {
+    color: #ffffff;
+    background-color: #ffcf11;
+    transition: 0.30s;
+}
+
+.menu ul li .amarillo {
+    border: 2px solid #ffcf11;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+
+.menu ul li .rojo {
+    border: 2px solid #f2163e;
+    border-radius: 20px;
+    transition: 0.30s;
+    text-align: center;
+    width:100px;
+}
+.menu ul li .ar {
+    border: 2px solid #f2163e;
+    background-color: #f2163e;
+    border-radius: 20px;
+    transition: 0.30s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li .ar:hover {
+    color: #ffcf11;
+    font-size: 18px;
+    background-color: #f2163e;
+    transition: 0.30s;
+}
+
+.menu ul li .ar span {
+    color: #ffcf11;
+    background-color: #f2163e;
+}
+
+.footer nav {
+    background-color: #fff;
+    color: #f2163e;
+    font-size: 14px;
+    text-align: center;
+    padding: 13px;
+    border-top: 2px solid #f2163e;
+}
+
+.footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 150px;
+}
+
+.footer nav ul li {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.footer nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.footer nav ul li a:hover {
+    text-decoration: underline 2px #f2163e;
+}
+
+
+.registro-establecimiento input::placeholder{
+    font-size: 18px;
+}
+
+
+.registro-establecimiento {
+    margin: 20px;
+    padding: 20px;
+    background-color: #efefef;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: #000000 5px 5px 12px;
+}
+
+.registro-establecimiento h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+.registro-establecimiento form {
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 5px;
+}
+
+.registro-establecimiento label {
+    font-weight: bold;
+}
+
+.registro-establecimiento input[type="text"],
+.registro-establecimiento input[type="tel"],
+.registro-establecimiento textarea {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.registro-establecimiento input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f2163e;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registro-establecimiento input[type="submit"]:hover {
+    background-color: #dc143c;
+}
+
+.registro-establecimiento {
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#selected-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #selected-images img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin: 5px;
+  }
+
+  .tit2{
+    color: #dc143c;
+  }

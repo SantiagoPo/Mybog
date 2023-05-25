@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBog</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./estilos/mapa.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <img src="/Imagenes/Logo.png" alt="Logo">
+            <li><a class="amarillo" href="/index.html">Inicio</a></li>
+            <li><a class="amarillo" href="/calendario.html">Calendario</a></li>
+            <li><a class="ar" href="/registro.html"><span>Re</span>gis<span>trar</span>se</a></li>
+            <li><a class="ar" href="/main.html"><span>In</span>gre<span>sar</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="map"></div>
+    </div>
+
+
+    <br><br><br>
+
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <p>© 2023 MyBog. Todos los derechos reservados.</p>
+        </nav>
+    </footer>
+</body>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FudGZseSIsImEiOiJjbGkwamdrYjcwMmdlM2NvOXgyN2s0aW1xIn0.c1WhoBvGP7nCERKiX-mxbQ';
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11', // Estilo del mapa
+        center: [-74.08175, 4.60971], // Coordenadas de Bogotá
+        zoom: 12 // Nivel de zoom inicial
+    });
+</script>
+
+</html>
